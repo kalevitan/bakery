@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name of cake:</strong>
+  <%= @cake.name %>
+</p>
+
+<p>
+  <strong>Number of Eggs:</strong>
+  <%= @cake.eggs %>
+</p>
+
+<p>
+  <strong>Amount of Flour:</strong>
+  <%= @cake.flour %>
+</p>
+
+<p>
+  <strong>Amount of Sugar:</strong>
+  <%= @cake.sugar %>
+</p>
+
+<p>
+  <strong>Amount of Oil:</strong>
+  <%= @cake.oil %>
+</p>
+
+<p>
+  <strong>What Comments do you have?:</strong>
+  <%= @cake.comments %>
+</p>
+
+<p>
+  <strong>Full Recipe</strong>
+  <em><%= @cake.recipe_sentence %></em>
+</p>
+
+<%= link_to 'Edit', edit_cake_path(@cake) %> |
+<%= link_to 'Back', cakes_path %>

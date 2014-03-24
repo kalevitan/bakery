@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @doughnut.name %>
+</p>
+
+<p>
+  <strong>Water:</strong>
+  <%= @doughnut.water %>
+</p>
+
+<p>
+  <strong>Sugar:</strong>
+  <%= @doughnut.sugar %>
+</p>
+
+<p>
+  <strong>Salt:</strong>
+  <%= @doughnut.salt %>
+</p>
+
+<p>
+  <strong>Eggs:</strong>
+  <%= @doughnut.eggs %>
+</p>
+
+<p>
+  <strong>Yeast:</strong>
+  <%= @doughnut.yeast %>
+</p>
+
+<p>
+  <strong>Filling:</strong>
+  <%= @doughnut.filling %>
+</p>
+
+<p>
+  <h2>More of the story</h2>
+  <%= @doughnut.story %>
+</p>
+
+<%= link_to 'Edit', edit_doughnut_path(@doughnut) %> |
+<%= link_to 'Back', doughnuts_path %>

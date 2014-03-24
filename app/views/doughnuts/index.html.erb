@@ -1,0 +1,41 @@
+<h1>Listing doughnuts</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Water</th>
+      <th>Sugar</th>
+      <th>Salt</th>
+      <th>Eggs</th>
+      <th>Yeast</th>
+      <th>Filling</th>
+      <th>Story</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @doughnuts.each do |doughnut| %>
+      <tr>
+        <td><%= doughnut.name %></td>
+        <td><%= doughnut.water %></td>
+        <td><%= doughnut.sugar %></td>
+        <td><%= doughnut.salt %></td>
+        <td><%= doughnut.eggs %></td>
+        <td><%= doughnut.yeast %></td>
+        <td><%= doughnut.filling %></td>
+        <td><%= doughnut.story %></td>
+        <td><%= link_to 'Show', doughnut %></td>
+        <td><%= link_to 'Edit', edit_doughnut_path(doughnut) %></td>
+        <td><%= link_to 'Destroy', doughnut, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Doughnut', new_doughnut_path %>
